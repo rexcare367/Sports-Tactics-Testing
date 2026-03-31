@@ -1,6 +1,6 @@
 import React from "react";
 import TacticsBoard from "./soccer/TacticsBoard";
-import { Zap } from "lucide-react";
+import { Zap, Mail } from "lucide-react";
 
 const AppLayout: React.FC = () => {
   return (
@@ -37,6 +37,19 @@ const AppLayout: React.FC = () => {
           </h1>
           <p className="mt-5 text-lg sm:text-xl text-gray-300 max-w-2xl mx-auto leading-relaxed">
             Drag and drop 22 players on a precisely scaled 75×120 yard pitch.
+          </p>
+          <p className="mt-6 text-sm sm:text-base text-gray-400 max-w-2xl mx-auto leading-relaxed flex flex-col sm:flex-row flex-wrap items-center justify-center gap-x-3 gap-y-2">
+            <span className="text-gray-400">
+              Developed by{" "}
+              <span className="text-gray-300 font-medium">Omar Mustafa</span>
+            </span>
+            <a
+              href="mailto:omarmus2005@outlook.com"
+              className="inline-flex items-center gap-1.5 rounded-md text-emerald-400/95 hover:text-emerald-300 underline-offset-4 hover:underline transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-emerald-400/50 focus-visible:ring-offset-2 focus-visible:ring-offset-gray-900"
+            >
+              <Mail className="w-4 h-4 shrink-0 opacity-90" aria-hidden />
+              <span>omarmus2005@outlook.com</span>
+            </a>
           </p>
         </div>
       </section>
